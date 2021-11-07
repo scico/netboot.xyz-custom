@@ -18,9 +18,8 @@ goto ${custom_choice}
 goto custom_exit
 
 :option_one
-kernel http://path.to/vmlinuz
-initrd http://path.to/initrd
-imgargs vmlinuz put_kernel_img_args_here
+kernel http://192.168.0.64/fedora-assets/releases/download/1.2-c6f3c188/squashfs.img
+initrd http://192.168.0.64/fedora-assets/releases/download/1.2-c6f3c188/initrd
 boot || goto custom_exit
 
 :option_two
